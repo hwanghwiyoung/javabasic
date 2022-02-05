@@ -1,0 +1,21 @@
+ch07 상속과 다형성
+
+1. 상속이란?
+- 기존에 존재하는 클래스를 물려받아 사용하는 것.
+- 다중상속 불가
+class a [
+	변수 선언
+}
+
+class b extends a{
+	변수 선언
+}
+2. 오버라이딩(OverRiding)
+
+3. 상속과 생성자
+
+4. package 와 import
+
+5. 제어자
+
+6. 다형성(polymorphism)
