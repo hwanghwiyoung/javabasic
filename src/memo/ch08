@@ -1,0 +1,21 @@
+ch08 추상 클래스와 인터페이스, 내부 클래스
+
+1. 추상 메서드와 추상 클래스
+	1) 선언부만 정의하고 구체적인 내용은 비워놓은 메서드
+	- ex) 
+	abstract void a();
+	
+	2) 추상 클래스
+	- 추상 메서드를 하나라도 포함하면 추상 클래스가 된다.
+	- 자식 클래스는 부모의 추상 메서드를 반드시 OverRiding 해야 한다.
+	- ex)
+	abstract class A {
+		int age;
+		abstract void a();
+		b(){};
+	}
+2. 인터페이스(interface)
+
+3. 내부 클래스(inner class)
+
+4. 익명 클래스(Anonymous)
