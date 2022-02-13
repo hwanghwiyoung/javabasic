@@ -15,7 +15,52 @@ ch08 추상 클래스와 인터페이스, 내부 클래스
 		b(){};
 	}
 2. 인터페이스(interface)
-
+	1) 인터페이스란?
+	- 객체간 상호 작용을 위한 일종의 규약
+	2) 인터페이스 문법
+	- 상수와 추상 메서드만 멤버로 가질 수 있다.
+	- ex)
+	interface Pokemon {
+		String name = "Pokemon";
+		void attack();
+	}
+	3) 인터페이스의 활용
+	Class Pikachu implements Pokemon {
+		@Override
+		public attack() {
+		
+		}
+	}
+	
 3. 내부 클래스(inner class)
-
+	1) 내부 클래스란?
+	- 어떤 클래스의 내부에 생성된 클래스
+	- 특정 클래스를 오픈하지 않기 위해서 => 캡슐화
+	- GUI(Graphic User Interface) 개발시 많이 사용됨
+	2) 내부 클래스의 종류
+	(1) 인스턴스 클래스
+	class OuterClass{
+		class InnerClass{
+		
+		}
+	}
+	(2) 스태틱 클래스
+	class OuterClass{
+		static class InnerClass{
+		
+		}
+	}
+	(3) 지역 클래스
+	class OuterClass{
+		void a(){
+			class InnerClass{
+			
+			}
+		}
+	}
+	2) 내부 클래스의 종류
 4. 익명 클래스(Anonymous)
+	- 이름이 없는 클래스
+	- 일회성으로 사용하기 위함
+	- 안드로이드 앱에서 주로 쓰이는 문법
+	

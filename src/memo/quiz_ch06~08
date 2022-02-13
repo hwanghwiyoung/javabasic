@@ -1,0 +1,79 @@
+객체지향
+
+1. 객체 지향 언어의 장점이 아닌 것은? 2번!
+1) 코드의 재사용성
+2) 코드의 실행 속도 향상
+3) 신뢰성 높은 프로그래밍
+4) 코드 관리의 편리함
+ 
+2. 메서드의 리턴값이 없을 경우 리턴타입을 어떻게 지정하나요?
+	void a() {
+	
+	}
+3.  getArea(int a){} 메소드를 OverLoading 한 메소드를 만드세요.
+	getArea(String a){}
+	getArea(int a, int b){}
+4. class A{} 클래스의 기본 생성자를 만드세요.
+	A(){
+	}
+5. 접근제어자의 접근 범위가 큰 것 부터 나열 하세요.
+	public protected default private
+6. 클래스 A는 추상 클래스 입니다. 클래스 A를 완성 하세요. 단, 클래스 A의 메소드와 변수 이름은 임의로 정해도 됩니다.
+	abstract class A{
+		
+	}
+7. 인터페이스 A 를 구현하는 클래스를 완성하세요. 단, 인터페이스 A는 go() 라는 추상 메소드를 가지고 있습니다. 
+class B implements A {
+	public void go() {
+	}
+}
+
+
+8. Parent 클래스를 상속해서 Child 클래스를 다음과 같이 작성했을 때 컴파일 에러가 발생하지 않도록 수정해 보세요.
+
+public class Parent {
+	public String name;
+	
+	public Parent(String name){
+		this.name = name;
+	}
+}
+
+public class Child extends Parent {
+	private int stdNo;
+	
+	public Child(String name, int stdNo){
+		super(name);
+		this.name = name;
+		this.stdNo = stdNo;
+	}
+}
+
+9. 다음은 Soundable 인터페이스 입니다. sound() 추상 메소드는 객체의 소리를 리턴 합니다.
+아래와 같이 Cat과 Dog 객체를 주고 실행했을 때 "야옹" "멍멍"이 출력되도록 Cat과 Dog 클래스를 작성해 보세요.
+public interface Soundale {
+	String sound();
+}
+
+public class SoundableExample {
+	private static void printSound(Soundable s) {
+		System.out.println(s.sound());
+	}
+	
+	public static void main(String[] args) {
+		printSound(new Cat());
+		printSound(new Dog());
+	}
+}
+
+public class Cat implements Soundable {
+	@override
+	String sound() {
+	 System.out.pirntin("야옹");
+	}
+}
+
+
+public class Dog {
+//?????
+}
